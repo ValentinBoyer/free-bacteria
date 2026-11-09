@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fond noir profond -->
+  <rect width="64" height="64" rx="14" fill="#050505"/>
+  <rect width="62" height="62" x="1" y="1" rx="13" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Halo rouge subtil -->
+  <defs>
+    <filter id="red-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#ef4444" flood-opacity="0.6"/>
+    </filter>
+    <linearGradient id="bacillus-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4d4d"/>
+      <stop offset="50%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(32,32) rotate(-35) translate(-32,-32)" filter="url(#red-glow)">
+    <!-- Flagelles (queues motrices) ondulantes -->
+    <path d="M 17 32 C 11 29, 9 35, 4 33" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 18 29 C 13 24, 10 27, 5 23" fill="none" stroke="#f87171" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 18 35 C 12 39, 9 37, 4 42" fill="none" stroke="#dc2626" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Corps de la bactérie (bacille en forme de gélule / capsule) -->
+    <rect x="18" y="24" width="28" height="16" rx="8" fill="url(#bacillus-grad)" stroke="#ff7878" stroke-width="1.2"/>
+
+    <!-- Pili (micro-cils périphériques) -->
+    <line x1="24" y1="23" x2="23" y2="20" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="32" y1="23" x2="32" y2="19" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="40" y1="23" x2="41" y2="20" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="47" y1="28" x2="50" y2="26" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="47" y1="36" x2="50" y2="38" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="40" y1="41" x2="41" y2="44" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="32" y1="41" x2="32" y2="45" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="24" y1="41" x2="23" y2="44" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Structure nucléaire / chromosome bactérien interne stylisé -->
+    <path d="M 24 31 Q 28 27 32 31 T 40 31" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
+  </g>
+</svg>

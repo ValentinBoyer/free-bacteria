@@ -1,0 +1,8 @@
+{
+  "name": "Front de Libération des Micro-organismes",
+  "description": "Campagne militante choc dénonçant la torture et l'exploitation systématique des bactéries dans les laboratoires de recherche.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
